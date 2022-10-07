@@ -3,34 +3,32 @@
 // Get message one //
 function returnQuoteOne(quotesArray) {
     let i = Math.floor(Math.random()* 4)
-    console.log(i);
-    let numberOne = 'Test 1';
-    return numberOne;
+    let quote = quotesArray[i];
+    return quote;
+    
 }
 
-// Attempting to make function with for loop work
+let numberOne = returnQuoteOne(['t', 'e', 's', 't']);
 
-let numberOne = returnQuoteOne();
+// Attempting to make function with for loop work
 
 // Get message two //
 
 function returnQuoteTwo(secondQuotesArray) {
     let j = Math.floor(Math.random()* 4)
-    console.log(j);
-    let numberTwo = 'Test 2';
-    return numberTwo;
-}
-let numberTwo = returnQuoteTwo();
+    let quote = secondQuotesArray[j];
+    return quote;
+    }
+let numberTwo = returnQuoteTwo(['a', 'b', 'c', 'd']);
 
 // Get message three //
 
 function returnQuoteThree(thirdQuotesArray) {
     let k = Math.floor(Math.random()* 4)
-    console.log(k);
-    let numberThree = 'Test 3';
-    return numberThree;
-}
-let numberThree = returnQuoteThree();
+    let quote = thirdQuotesArray[k];
+    return quote;
+    }
+let numberThree = returnQuoteThree(['w', 'x', 'y', 'z']);
 
 // Return message //
 function printAllQuotes() {
